@@ -73,7 +73,6 @@
         <p class="header-subtitle">Mr.chen blog</p>
         
         
-        
         <div id="switch-btn" class="switch-btn">
             <div class="icon">
                 <div class="icon-ctn">
@@ -123,14 +122,24 @@
                                         
                                         <li><a href="/">博客首页</a></li>
                                         
-                                        <li><a href="/works/">作品展示</a></li>
+                                        <li><a href="/archives/">文章归档</a></li>
                                         
-                                        <li><a href="/privacy/">软件隐私</a></li>
+                                        <li><a href="/categories/">博客分类</a></li>
                                         
-                                        <li><a href="/about/">留言打卡</a></li>
+                                        <li><a href="/categories/App%E5%8D%8F%E8%AE%AE/">App协议</a></li>
                                         
-                                        <li><a href="/FrontEndGuide">前端导航</a></li>
-                                        
+                                        <li>
+                                            <div class="st-search-container">
+                                              <a href="javascript:showSearch()">搜索文章</a>
+                                              <form>
+                                                <input onclick="searchInputClick()" 
+                                                hidden
+                                                type="text" id="searchBtn" class="st-default-search-input" 
+                                                style="width:0; height:0; background-color: #ffffff00;display: none;" 
+                                                />
+                                              </form
+                                            </div>                                
+                                        </li>
                         </ul>
                     </nav>
                     <nav class="header-nav">
@@ -149,7 +158,7 @@
                 
                                         <section class="switch-part switch-part2">
                                             <div class="widget tagcloud" id="js-tagcloud">
-                                                
+                                                <a href="/tags/hello/" style="font-size: 10px;">hello</a> <a href="/tags/%E7%94%A8%E6%88%B7%E5%8D%8F%E8%AE%AE/" style="font-size: 10px;">用户协议</a> <a href="/tags/%E9%9A%90%E7%A7%81%E5%8D%8F%E8%AE%AE/" style="font-size: 10px;">隐私协议</a>
                                             </div>
                                         </section>
                                         
@@ -187,6 +196,27 @@
 <script type="text/javascript" src="/dist/APlayer.min.js"></script>
 <script type="text/javascript" src="/dist/music.js"></script>
 <script type="text/javascript" src="/dist/color-thief.js"></script>
+
+<script type="text/javascript">
+    function showSearch(params) {
+
+        document.getElementById('searchBtn').click();
+    }
+    function searchInputClick(params) {
+
+        const evt = new KeyboardEvent('keydown', { keyCode: 13 });
+        document.getElementById('searchBtn').dispatchEvent(evt);
+
+    }
+    (function (w, d, t, u, n, s, e) {
+        w['SwiftypeObject'] = n; w[n] = w[n] || function () {
+            (w[n].q = w[n].q || []).push(arguments);
+        }; s = d.createElement(t);
+        e = d.getElementsByTagName(t)[0]; s.async = 1; s.src = u; e.parentNode.insertBefore(s, e);
+    })(window, document, 'script', '//s.swiftypecdn.com/install/v2/st.js', '_st');
+
+    _st('install', 'sBoqSG7SzXgewDNLcZ4X', '2.0.0');
+</script>
     </div>
     <div class="mid-col">
       <nav id="mobile-nav">
@@ -212,13 +242,11 @@
                 
                     <li><a href="/">博客首页</a></li>
                 
-                    <li><a href="/works/">作品展示</a></li>
+                    <li><a href="/archives/">文章归档</a></li>
                 
-                    <li><a href="/privacy/">软件隐私</a></li>
+                    <li><a href="/categories/">博客分类</a></li>
                 
-                    <li><a href="/about/">留言打卡</a></li>
-                
-                    <li><a href="/FrontEndGuide">前端导航</a></li>
+                    <li><a href="/categories/App%E5%8D%8F%E8%AE%AE/">App协议</a></li>
                 
                 <div class="clearfix"></div>
                 </ul>
