@@ -128,6 +128,8 @@
                                         
                                         <li><a href="/categories/App%E5%8D%8F%E8%AE%AE/">App协议</a></li>
                                         
+                                        <li><a href="/%E5%85%AC%E7%9B%8A/">助力公益</a></li>
+                                        
                                         <li>
                                             <div class="st-search-container">
                                               <a href="javascript:showSearch()">搜索文章</a>
@@ -246,6 +248,8 @@
                 
                     <li><a href="/categories/App%E5%8D%8F%E8%AE%AE/">App协议</a></li>
                 
+                    <li><a href="/%E5%85%AC%E7%9B%8A/">助力公益</a></li>
+                
                 <div class="clearfix"></div>
                 </ul>
             </nav>
@@ -346,52 +350,6 @@
 <p>有任何疑问，可以联系我们：<a href="mailto:ce.mr@qq.com">ce.mr@qq.com</a></p>
 
       
-      
-        <div class="page-reward">
-          <p><a href="javascript:void(0)" onclick="dashangToggle()" class="dashang">赏</a></p>
-          <div class="hide_box"></div>
-          <div class="shang_box">
-            <a class="shang_close" href="javascript:void(0)" onclick="dashangToggle()">×</a>
-            <div class="shang_tit">
-              <p>一瓶啤酒🍺一包烟</p>
-            </div>
-            <div class="shang_payimg">
-              <img src="/img/alipayimg.jpg" alt="扫码支持" title="扫一扫" />
-            </div>
-              <div class="pay_explain">扫码打赏，你说多少就多少</div>
-            <div class="shang_payselect">
-              
-                <div class="pay_item checked" data-id="alipay">
-                  <span class="radiobox"></span>
-                  <span class="pay_logo"><img src="/img/alipay.png" alt="支付宝" /></span>
-                </div>
-              
-              
-                <div class="pay_item" data-id="wechat">
-                  <span class="radiobox"></span>
-                  <span class="pay_logo"><img src="/img/weixin.png" alt="微信" /></span>
-                </div>
-              
-            </div>
-            <div class="shang_info">
-              <p>打开<span id="shang_pay_txt">支付宝</span>扫一扫，即可进行扫码打赏哦</p>
-            </div>
-          </div>
-        </div>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
-        <script type="text/javascript">
-          $(".pay_item").click(function(){
-            $(this).addClass('checked').siblings('.pay_item').removeClass('checked');
-            var dataid=$(this).attr('data-id');
-            $(".shang_payimg img").attr("src","/img/"+dataid+"img.jpg");
-            $("#shang_pay_txt").text(dataid=="alipay"?"支付宝":"微信");
-          });
-          function dashangToggle(){
-            
-            $(".hide_box").fadeToggle();
-            $(".shang_box").fadeToggle();
-          }
-        </script>
       
     </div>
     
